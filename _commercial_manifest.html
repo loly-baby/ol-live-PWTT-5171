@@ -30,6 +30,22 @@
         font-size: 12px;
         font-weight: bold;
       }
+      /* 新增的成功按钮样式 */
+      .success-button {
+        margin-top: 24px;
+        background: #22c55e; /* 绿色背景 */
+        color: #fff; /* 白色文字 */
+        padding: 12px 24px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none; /* 移除默认边框 */
+        cursor: pointer; /* 鼠标悬停时显示手型 */
+        transition: background 0.3s ease; /* 平滑过渡效果 */
+      }
+      .success-button:hover {
+        background: #16a34a; /* 悬停时变暗 */
+      }
     </style>
   </head>
   <body>
@@ -39,6 +55,8 @@
         Application Architecture Ready
       </p>
       <div class="ok">校验通过：准备进入物理云端交付</div>
+      <!-- 增加的成功按钮 -->
+      <button class="success-button">完成部署</button>
     </div>
   </body>
 </html>
